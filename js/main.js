@@ -156,3 +156,75 @@ const aceVentura = {
       }
     ]
   }
+
+  const christmasStory = {
+    quote: "I can't put my arms down!",
+    correctVideoUrl: 'https://youtu.be/PKxsOlzuH0k?t=39',
+    incorrectVideoUrl: 'https://youtu.be/vvB6Ld1g8vA?t=26',
+    options: [
+      {
+        isCorrect: false,
+        movie: 'Space Jam'
+      },
+      {
+        isCorrect: false,
+        movie: 'Rookie of the Year'
+      },
+      {
+        isCorrect: false,
+        movie: "Harry Potter and the Scorcerer's Stone"
+      },
+      {
+        isCorrect: true,
+        movie: 'A Christmas Story'
+      }
+    ]
+  }
+
+  const anchorMan = {
+    quote: "I don't know how to put this, but I'm kind of a big deal",
+    correctVideoUrl: 'https://youtu.be/Hzx8KHjQD6c',
+    incorrectVideoUrl: 'https://getyarn.io/yarn-clip/e5a0cfde-22ed-4b95-b0f0-6315d82c4b34',
+    options: [
+      {
+        isCorrect: true,
+        movie: 'Anchorman: The Legend of Ron Burgundy'
+      },
+      {
+        isCorrect: false,
+        movie: 'The Hangover'
+      },
+      {
+        isCorrect: false,
+        movie: 'Mean Girls'
+      },
+      {
+        isCorrect: false,
+        movie: 'Iron Man'
+      }
+    ]
+  }
+
+  const willyWonka = {
+    quote: 'We are the music makers and we are the dreamers of the dreams',
+    correctVideoUrl: 'https://youtu.be/3pwvB4_Te8A?t=19',
+    incorrectVideoUrl: 'https://youtu.be/HaoySOGlZ_U?t=58',
+    options: [
+      {
+        isCorrect: false,
+        movie: 'Bohemian Rhapsody'
+      },
+      {
+        isCorrect: true,
+        movie: 'Willy Wonka and the Chocolate Factory'
+      },
+      {
+        isCorrect: false,
+        movie: 'Almost Famous'
+      },
+      {
+        isCorrect: false,
+        movie: 'Dreamgirls'
+      }
+    ]
+  }
