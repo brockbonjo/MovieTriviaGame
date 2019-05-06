@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
     background-color: #000000;
+    color: #F7F9F9;
     background-image: url('../css/Unit1GameBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,23 +25,23 @@ nav {
     grid-area: nav;
 }
 
-
 .answer {
     background-color: #000000;
     color: #F7F9F9;
-    height: 50px;
-    width: 150px;
+    height: 75%;
+    width: 80%;
     font-family: 'Quicksand', sans-serif; 
     border-radius: 20%;
 }
 
 .answer-buttons {
     grid-area: answer-buttons;
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
+    justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
     grid-template-areas: 
     "quote quote"
     "answer1 answer2"
@@ -50,11 +51,14 @@ nav {
 .movieQuote {
     grid-area: quote;
     font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #answerOne {
     grid-area: answer1;
-    align-content: center;
 }
 
 #answerTwo {
