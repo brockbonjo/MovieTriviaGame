@@ -245,11 +245,11 @@ const theRoom = {
 /*----- cached element references -----*/
 
 function buttonOne() {
-    document.getElementById("answerOne").innerHTML=
-   "Test";
-}
+    document.getElementById("answerOne").value=
+   'Test';
+};
 
-console.log(buttonOne());
+buttonOne()
 /*----- event listeners -----*/
 
 
