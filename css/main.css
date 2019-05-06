@@ -8,10 +8,9 @@ body {
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 200px auto;
+    grid-template-rows: 50px auto;
     grid-template-areas: 
     "nav"
-    "quote"
     "answer-buttons";
 }
 
@@ -25,10 +24,6 @@ nav {
     grid-area: nav;
 }
 
-.movieQuote {
-    grid-area: quote;
-    font-family: 'Quicksand', sans-serif;
-}
 
 .answer {
     background-color: #000000;
@@ -45,10 +40,16 @@ nav {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
+    "quote quote"
     "answer1 answer2"
     "answer3 answer4";
+}
+
+.movieQuote {
+    grid-area: quote;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #answerOne {
