@@ -16,6 +16,7 @@ body {
 }
 
 nav {
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,13 +31,12 @@ nav {
     color: #F7F9F9;
     height: 75%;
     width: 80%;
-    font-family: 'Quicksand', sans-serif; 
     border-radius: 20%;
 }
 
 .answer-buttons {
     grid-area: answer-buttons;
-    min-height: 100%;
+    height: 80%;
     margin: 0;
     justify-items: center;
     display: grid;
@@ -50,7 +50,7 @@ nav {
 
 .movieQuote {
     grid-area: quote;
-    font-family: 'Quicksand', sans-serif;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
