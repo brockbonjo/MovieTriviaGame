@@ -1,48 +1,6 @@
-
-
-/*----- app's state (variables) -----*/
-
-
-/*----- cached element references -----*/
-
-
-/*----- event listeners -----*/
-
-
-/*----- functions -----*/
-function buttonOne() {
-    var x = document.getElementById("myBtn").value;
-    document.getElementById("demo").innerHTML = x;
-}
-
-function buttonTwo() {
-    var x = document.getElementById("myBtn").value;
-    document.getElementById("demo").innerHTML = x;
-}
-
-function buttonThree() {
-    var x = document.getElementById("myBtn").value;
-    document.getElementById("demo").innerHTML = x;
-}
-
-function buttonFour() {
-    var x = document.getElementById("myBtn").value;
-    document.getElementById("demo").innerHTML = x;
-}
-
-
-
-
-
-
-
-
-
-
-
 /*----- constants -----*/
 const aceVentura = {
-    quote: 'Alright then!',
+    quote: 'Alrighty then!',
     correctVideoUrl: 'https://youtu.be/0tJGk4ofc18',
     incorrectVideoUrl: 'https://youtu.be/WLQcBoKekmQ',
     options: [
@@ -280,3 +238,20 @@ const theRoom = {
         }
     ]
 }
+
+/*----- app's state (variables) -----*/
+
+
+/*----- cached element references -----*/
+
+function buttonOne() {
+    document.getElementById("answerOne").innerHTML=
+   "Test";
+}
+
+console.log(buttonOne());
+/*----- event listeners -----*/
+
+
+
+/*----- functions -----*/
