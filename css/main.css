@@ -1,7 +1,10 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
-    font-family: 'Montserrat Subrayada', sans-serif;
     background-color: #000000;
     color: #F7F9F9;
     background-image: url('../css/Unit1GameBackground.jpg');
@@ -16,7 +19,6 @@ body {
 }
 
 nav {
-    font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,11 +34,12 @@ nav {
     height: 75%;
     width: 80%;
     border-radius: 20%;
+    font-size: 15px;
 }
 
 .answer-buttons {
     grid-area: answer-buttons;
-    height: 80%;
+    height: 70%;
     margin: 0;
     justify-items: center;
     display: grid;
@@ -50,9 +53,9 @@ nav {
 
 .movieQuote {
     grid-area: quote;
-    height: 20%;
+    height: 30%;
+    font-size: 40px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
