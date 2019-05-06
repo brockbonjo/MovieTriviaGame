@@ -181,15 +181,14 @@ const christmasStory = {
     ]
 }
 
-//may change this movie option
-const anchorMan = {
-    quote: "I don't know how to put this, but I'm kind of a big deal",
-    correctVideoUrl: 'https://youtu.be/Hzx8KHjQD6c?t=11',
-    incorrectVideoUrl: 'https://getyarn.io/yarn-clip/e5a0cfde-22ed-4b95-b0f0-6315d82c4b34',
+const myCousinVinny = {
+    quote: "Oh, yeah, you blend",
+    correctVideoUrl: 'https://youtu.be/g1DexW96bkA',
+    incorrectVideoUrl: 'https://youtu.be/AiA1NVEf9K4',
     options: [
         {
         isCorrect: true,
-        movie: 'Anchorman: The Legend of Ron Burgundy'
+        movie: 'My Cousin Vinny'
         },
         {
         isCorrect: false,
@@ -201,7 +200,7 @@ const anchorMan = {
         },
         {
         isCorrect: false,
-        movie: 'Iron Man'
+        movie: 'Get Shorty'
         }
     ]
 }
