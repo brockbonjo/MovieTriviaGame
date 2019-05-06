@@ -1,12 +1,3 @@
-.answer {
-    background-color: #000000;
-    color: #F7F9F9;
-    height: 50px;
-    width: 150px;
-    font-family: 'Quicksand', sans-serif; 
-    border-radius: 20%;
-}
-
 body {
     min-height: 100vh;
     margin: 0;
@@ -16,27 +7,53 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px auto;
     grid-template-areas: 
-    "nav nav"
-    "hdr hdr"
-    "answer1 answer2"
-    "answer3 answer4"
+    "nav"
+    "quote"
+    "answer-buttons";
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
     grid-area: nav;
 }
 
-header {
-    grid-area: hdr;
+.movieQuote {
+    grid-area: quote;
     font-family: 'Quicksand', sans-serif;
+}
+
+.answer {
+    background-color: #000000;
+    color: #F7F9F9;
+    height: 50px;
+    width: 150px;
+    font-family: 'Quicksand', sans-serif; 
+    border-radius: 20%;
+}
+
+.answer-buttons {
+    grid-area: answer-buttons;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "answer1 answer2"
+    "answer3 answer4";
 }
 
 #answerOne {
     grid-area: answer1;
+    align-content: center;
 }
 
 #answerTwo {
