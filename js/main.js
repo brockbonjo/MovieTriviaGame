@@ -1,7 +1,4 @@
-/*----- constants -----*/
 
-//font-family: 'Montserrat Subrayada', sans-serif;
-//font-family: 'Quicksand', sans-serif;
 
 /*----- app's state (variables) -----*/
 
@@ -13,10 +10,38 @@
 
 
 /*----- functions -----*/
+function buttonOne() {
+    var x = document.getElementById("myBtn").value;
+    document.getElementById("demo").innerHTML = x;
+}
+
+function buttonTwo() {
+    var x = document.getElementById("myBtn").value;
+    document.getElementById("demo").innerHTML = x;
+}
+
+function buttonThree() {
+    var x = document.getElementById("myBtn").value;
+    document.getElementById("demo").innerHTML = x;
+}
+
+function buttonFour() {
+    var x = document.getElementById("myBtn").value;
+    document.getElementById("demo").innerHTML = x;
+}
 
 
+
+
+
+
+
+
+
+
+
+/*----- constants -----*/
 const aceVentura = {
-    //add link to curtain video and when you click "next" button, it plays the video
     quote: 'Alright then!',
     correctVideoUrl: 'https://youtu.be/0tJGk4ofc18',
     incorrectVideoUrl: 'https://youtu.be/WLQcBoKekmQ',
