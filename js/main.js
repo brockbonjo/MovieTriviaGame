@@ -1,5 +1,7 @@
 /*----- constants -----*/
 
+//font-family: 'Montserrat Subrayada', sans-serif;
+//font-family: 'Quicksand', sans-serif;
 
 /*----- app's state (variables) -----*/
 
@@ -14,6 +16,7 @@
 
 
 const aceVentura = {
+    //add link to curtain video and when you click "next" button, it plays the video
     quote: 'Alright then!',
     correctVideoUrl: 'https://youtu.be/0tJGk4ofc18',
     incorrectVideoUrl: 'https://youtu.be/WLQcBoKekmQ',

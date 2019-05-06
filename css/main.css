@@ -1,2 +1,14 @@
-font-family: 'Montserrat Subrayada', sans-serif;
-font-family: 'Quicksand', sans-serif;
+.answer {
+    background-color: #000000;
+    color: #F7F9F9;
+    height: 50px;
+    width: 150px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  body {
+    background-color: #000000;
+    background-image: url('../css/Unit1GameBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
