@@ -261,6 +261,7 @@ const questions = [theRoom, willyWonka, myCousinVinny, christmasStory, homeAlone
 const questionCounter = [];
 
 function playQuestion() {
+    showButtons();
     const selectedQuestion = questions.pop();
     questionCounter.push(selectedQuestion);
     document.getElementById('movieQuote').innerHTML = selectedQuestion.quote;
@@ -280,31 +281,42 @@ function renderButton(buttonNum, movieName) {
 
 playQuestion();
 
+function hideButtons() {
+    document.getElementById('answerOne').style.visibility = 'hidden';
+    document.getElementById('answerTwo').style.visibility = 'hidden';
+    document.getElementById('answerThree').style.visibility = 'hidden';
+    document.getElementById('answerFour').style.visibility = 'hidden';
+}
 
-// var ifrm = document.createElement('iframe');
-// ifrm.setAttribute('id', 'ifrm'); // assign an id
-// document.body.appendChild(ifrm); // to place at end of document
-// ifrm.setAttribute('src', questionCounter[0].incorrectVideoUrl);
-
+function showButtons() {
+    document.getElementById('answerOne').style.visibility = 'visible';
+    document.getElementById('answerTwo').style.visibility = 'visible';
+    document.getElementById('answerThree').style.visibility = 'visible';
+    document.getElementById('answerFour').style.visibility = 'visible';
+}
 
 function playVideo() {
 
     document.getElementById('answerOne').addEventListener('click', function() {
+        hideButtons();
         questionCounter[0].options[0].isCorrect === true  
         ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
         : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
     });
     document.getElementById('answerTwo').addEventListener('click', function() {
+        hideButtons();
         questionCounter[0].options[1].isCorrect === true  
         ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
         : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
     });
     document.getElementById('answerThree').addEventListener('click', function() {
+        hideButtons();
         questionCounter[0].options[2].isCorrect === true  
         ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
         : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
     });
     document.getElementById('answerFour').addEventListener('click', function() {
+        hideButtons();
         questionCounter[0].options[3].isCorrect === true  
         ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
         : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
