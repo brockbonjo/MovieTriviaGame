@@ -54,7 +54,9 @@ nav {
 .movieQuote {
     grid-area: quote;
     height: 30%;
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align:center;
     display: flex;
     justify-content: center;
     align-items: center;

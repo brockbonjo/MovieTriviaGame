@@ -240,16 +240,29 @@ const theRoom = {
 }
 
 /*----- app's state (variables) -----*/
-
+const questions = [aceVentura, lordOfTheRings, sandLot];
 
 /*----- cached element references -----*/
 
-function buttonOne() {
-    document.getElementById("answerOne").value=
-   'Test';
+function playQuestion() {
+    const selectedQuestion = questions.pop();
+    document.getElementById('movieQuote').innerHTML = selectedQuestion.quote;
+
+    renderButton('One', selectedQuestion.options[0].movie)
+    renderButton('Two', selectedQuestion.options[1].movie)
+    renderButton('Three', selectedQuestion.options[2].movie)
+    renderButton('Four', selectedQuestion.options[3].movie)
+
+}
+
+
+function renderButton(buttonNum, movieName) {
+    document.getElementById(`answer${buttonNum}`).value = 
+   movieName;
 };
 
-buttonOne()
+
+playQuestion();
 /*----- event listeners -----*/
 
 
