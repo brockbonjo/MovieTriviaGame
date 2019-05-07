@@ -1,8 +1,8 @@
 /*----- constants -----*/
 const aceVentura = {
     quote: 'Alrighty then!',
-    correctVideoUrl: 'https://youtu.be/0tJGk4ofc18',
-    incorrectVideoUrl: 'https://youtu.be/WLQcBoKekmQ',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/0tJGk4ofc18?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/WLQcBoKekmQ?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -310,11 +310,10 @@ function playVideo() {
         : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
     });
 
-
 }
 
 playVideo();
 
 function nextQuestion() {
-    
+
 }
