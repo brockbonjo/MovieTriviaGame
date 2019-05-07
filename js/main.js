@@ -25,8 +25,8 @@ const aceVentura = {
 
 const starWars = {
     quote: 'Never tell me the odds',
-    correctVideoUrl: 'https://youtu.be/gRvu0yHoHy8?t=60',
-    incorrectVideoUrl: 'https://youtu.be/N1uTsqJVAeo',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gRvu0yHoHy8?start=60?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N1uTsqJVAeo?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: true,
@@ -49,8 +49,8 @@ const starWars = {
 
 const lordOfTheRings = {
     quote: 'Nobody tosses a dwarf',
-    correctVideoUrl: 'https://youtu.be/j4RowL_tZug',
-    incorrectVideoUrl: 'https://youtu.be/3Slv-p4Fato',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/j4RowL_tZug?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3Slv-p4Fato?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -98,7 +98,7 @@ const sandLot = {
 const backToTheFuture = {
     quote: '1.21 gigawatts? Great scott!',
     correctVideoUrl: 'https://youtu.be/I5cYgRnfFDA?t=11',
-    incorrectVideoUrl: 'https://youtu.be/BWUP5QxdwPg',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/BWUP5QxdwPg?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -121,8 +121,8 @@ const backToTheFuture = {
 
 const homeAlone = {
     quote: 'Why the hell are you dressed like a chicken?',
-    correctVideoUrl: 'https://youtu.be/VNWO9lfBg-s',
-    incorrectVideoUrl: 'https://youtu.be/Y-4-q3AiTcw',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/VNWO9lfBg-s?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-4-q3AiTcw?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -169,8 +169,8 @@ const christmasStory = {
 
 const myCousinVinny = {
     quote: "Oh, yeah, you blend",
-    correctVideoUrl: 'https://youtu.be/g1DexW96bkA',
-    incorrectVideoUrl: 'https://youtu.be/AiA1NVEf9K4',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/g1DexW96bkA?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/AiA1NVEf9K4?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: true,
@@ -217,7 +217,7 @@ const willyWonka = {
 
 const theRoom = {
     quote: 'Oh, hi Mark',
-    correctVideoUrl: 'https://youtu.be/zLhoDB-ORLQ',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/zLhoDB-ORLQ?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     incorrectVideoUrl: 'https://youtu.be/pjc4ZPTX1XQ?t=16',
     options: [
         {
@@ -242,8 +242,13 @@ const theRoom = {
 /*----- app's state (variables) -----*/
 const questions = [theRoom, willyWonka, myCousinVinny, christmasStory, homeAlone, backToTheFuture, sandLot, lordOfTheRings, aceVentura];
 
-/*----- cached element references -----*/
+let scoreKeeper = 0;
 
+const questionCounter = [];
+
+
+/*----- cached element references -----*/
+document.getElementById('score').innerHTML = 'Score: ' + scoreKeeper;
 
 /*----- event listeners -----*/
 
@@ -258,7 +263,7 @@ const questions = [theRoom, willyWonka, myCousinVinny, christmasStory, homeAlone
 
 /*----- functions -----*/
 
-const questionCounter = [];
+
 
 function playQuestion() {
     showButtons();
@@ -294,6 +299,7 @@ function showButtons() {
     document.getElementById('answerThree').style.visibility = 'visible';
     document.getElementById('answerFour').style.visibility = 'visible';
 }
+
 
 function playVideo() {
 
