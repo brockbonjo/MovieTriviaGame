@@ -283,8 +283,23 @@ playQuestion();
 function playVideo() {
     document.getElementById('answerOne').addEventListener('click', function() {
         questionCounter[0].options[0].isCorrect === true  
-        ? alert("true") 
-        : alert("false");
+        ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
+        : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
+    });
+    document.getElementById('answerTwo').addEventListener('click', function() {
+        questionCounter[0].options[1].isCorrect === true  
+        ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
+        : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
+    });
+    document.getElementById('answerThree').addEventListener('click', function() {
+        questionCounter[0].options[2].isCorrect === true  
+        ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
+        : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
+    });
+    document.getElementById('answerFour').addEventListener('click', function() {
+        questionCounter[0].options[3].isCorrect === true  
+        ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
+        : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
     });
 }
 
