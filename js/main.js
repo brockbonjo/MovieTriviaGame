@@ -250,20 +250,9 @@ const questionCounter = [];
 /*----- cached element references -----*/
 document.getElementById('score').innerHTML = 'Score: ' + scoreKeeper;
 
-/*----- event listeners -----*/
-
-
-//if person clicks button where isCorrect=true, correctVideoURL plays
-//if person clicks button where isCorrect=false, incorrectVideoURL plays
-
-//video is played in 'movieQuote' div and the buttons do not display
 //a new button will fade in that will allow the person to render the next question
 
-
-
 /*----- functions -----*/
-
-
 
 function playQuestion() {
     showButtons();
@@ -271,17 +260,17 @@ function playQuestion() {
     questionCounter.push(selectedQuestion);
     document.getElementById('movieQuote').innerHTML = selectedQuestion.quote;
     document.getElementById('question-counter').innerHTML = 'Question ' + questionCounter.length + ' of 10';
-
+    
     renderButton('One', selectedQuestion.options[0].movie)
     renderButton('Two', selectedQuestion.options[1].movie)
     renderButton('Three', selectedQuestion.options[2].movie)
     renderButton('Four', selectedQuestion.options[3].movie)
-
+    
 }
 
 function renderButton(buttonNum, movieName) {
     document.getElementById(`answer${buttonNum}`).value = 
-   movieName;
+    movieName;
 };
 
 playQuestion();
@@ -300,6 +289,7 @@ function showButtons() {
     document.getElementById('answerFour').style.visibility = 'visible';
 }
 
+/*----- event listeners -----*/
 
 function playVideo() {
 
