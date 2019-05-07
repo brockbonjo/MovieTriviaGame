@@ -280,7 +280,15 @@ function renderButton(buttonNum, movieName) {
 
 playQuestion();
 
+
+// var ifrm = document.createElement('iframe');
+// ifrm.setAttribute('id', 'ifrm'); // assign an id
+// document.body.appendChild(ifrm); // to place at end of document
+// ifrm.setAttribute('src', questionCounter[0].incorrectVideoUrl);
+
+
 function playVideo() {
+
     document.getElementById('answerOne').addEventListener('click', function() {
         questionCounter[0].options[0].isCorrect === true  
         ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
@@ -301,6 +309,12 @@ function playVideo() {
         ? document.getElementById('movieQuote').innerHTML = questionCounter[0].correctVideoUrl
         : document.getElementById('movieQuote').innerHTML = questionCounter[0].incorrectVideoUrl;
     });
+
+
 }
 
 playVideo();
+
+function nextQuestion() {
+    
+}

@@ -15,7 +15,7 @@ body {
     grid-template-rows: 50px auto;
     grid-template-areas: 
     "nav"
-    "answer-buttons";
+    "game-container";
 }
 
 nav {
@@ -37,29 +37,44 @@ nav {
     font-size: 15px;
 }
 
-.answer-buttons {
-    grid-area: answer-buttons;
-    height: 70%;
+.game-container {
+    grid-area: game-container;
     margin: 0;
     justify-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr auto 2fr;
     grid-template-areas: 
-    "quote quote"
-    "answer1 answer2"
-    "answer3 answer4";
+    "quote"
+    "embeddedMovie"
+    "answer-buttons";
 }
 
 .movieQuote {
     grid-area: quote;
-    height: 30%;
     font-size: 25px;
     font-weight: bold;
     text-align:center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#embeddedmovie {
+    grid-area: embeddedMovie;
+}
+
+.answer-buttons {
+    grid-area: answer-buttons;
+    justify-items: center;
+    display: grid;
+    height: 90%;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "answer1 answer2"
+    "answer3 answer4";
 }
 
 #answerOne {
