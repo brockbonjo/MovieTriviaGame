@@ -25,8 +25,8 @@ const aceVentura = {
 
 const starWars = {
     quote: 'Never tell me the odds',
-    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gRvu0yHoHy8?start=60?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N1uTsqJVAeo?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    correctVideoUrl: 'https://youtu.be/gRvu0yHoHy8?t=60',
+    incorrectVideoUrl: 'https://youtu.be/N1uTsqJVAeo',
     options: [
         {
         isCorrect: true,
