@@ -280,6 +280,7 @@ function hideButtons() {
     document.getElementById('answerTwo').style.visibility = 'hidden';
     document.getElementById('answerThree').style.visibility = 'hidden';
     document.getElementById('answerFour').style.visibility = 'hidden';
+    document.getElementById('nextButton').style.visibility = 'visible';
 }
 
 function showButtons() {
@@ -287,6 +288,7 @@ function showButtons() {
     document.getElementById('answerTwo').style.visibility = 'visible';
     document.getElementById('answerThree').style.visibility = 'visible';
     document.getElementById('answerFour').style.visibility = 'visible';
+    document.getElementById('nextButton').style.visibility = 'hidden';
 }
 
 /*----- event listeners -----*/
@@ -295,31 +297,34 @@ function playVideo() {
 
     document.getElementById('answerOne').addEventListener('click', function() {
         hideButtons();
-        questionCounter[0].options[0].isCorrect === true  
+        questionCounter[questionCounter.length-1].options[0].isCorrect === true  
         ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
         : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
     });
+
     document.getElementById('answerTwo').addEventListener('click', function() {
         hideButtons();
-        questionCounter[0].options[1].isCorrect === true  
+        questionCounter[questionCounter.length-1].options[1].isCorrect === true  
         ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
         : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
     });
+
     document.getElementById('answerThree').addEventListener('click', function() {
         hideButtons();
-        questionCounter[0].options[2].isCorrect === true  
+        questionCounter[questionCounter.length-1].options[2].isCorrect === true  
         ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
         : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
     });
+
     document.getElementById('answerFour').addEventListener('click', function() {
         hideButtons();
-        questionCounter[0].options[3].isCorrect === true  
+        questionCounter[questionCounter.length-1].options[3].isCorrect === true  
         ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
         : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
@@ -330,6 +335,6 @@ function playVideo() {
 
 playVideo();
 
-function nextQuestion() {
+function nextButton() {
 
 }
