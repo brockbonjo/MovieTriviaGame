@@ -25,8 +25,8 @@ const aceVentura = {
 
 const starWars = {
     quote: 'Never tell me the odds',
-    correctVideoUrl: 'https://youtu.be/gRvu0yHoHy8?t=60',
-    incorrectVideoUrl: 'https://youtu.be/N1uTsqJVAeo',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gRvu0yHoHy8?controls=0&amp;start=60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N1uTsqJVAeo?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: true,
@@ -73,8 +73,8 @@ const lordOfTheRings = {
 
 const sandLot = {
     quote: 'You never heard of the Sultan of Swat? The Titan of Terror? The Collosus of Clout?',
-    correctVideoUrl: 'https://youtu.be/VdLkYcnml4s?t=34',
-    incorrectVideoUrl: 'https://youtu.be/hxJPJ6JY0Pk?t=11',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/VdLkYcnml4s?controls=0&amp;start=34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hxJPJ6JY0Pk?controls=0&amp;start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -97,7 +97,7 @@ const sandLot = {
 
 const backToTheFuture = {
     quote: '1.21 gigawatts? Great scott!',
-    correctVideoUrl: 'https://youtu.be/I5cYgRnfFDA?t=11',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/I5cYgRnfFDA?controls=0&amp;start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/BWUP5QxdwPg?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
@@ -145,8 +145,8 @@ const homeAlone = {
 
 const christmasStory = {
     quote: "I can't put my arms down!",
-    correctVideoUrl: 'https://youtu.be/PKxsOlzuH0k?t=39',
-    incorrectVideoUrl: 'https://youtu.be/vvB6Ld1g8vA?t=26',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/PKxsOlzuH0k?controls=0&amp;start=39" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/vvB6Ld1g8vA?controls=0&amp;start=26" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -193,8 +193,8 @@ const myCousinVinny = {
 
 const willyWonka = {
     quote: 'We are the music makers and we are the dreamers of the dreams',
-    correctVideoUrl: 'https://youtu.be/3pwvB4_Te8A?t=19',
-    incorrectVideoUrl: 'https://youtu.be/HaoySOGlZ_U?t=58',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3pwvB4_Te8A?controls=0&amp;start=19" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HaoySOGlZ_U?controls=0&amp;start=58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -218,7 +218,7 @@ const willyWonka = {
 const theRoom = {
     quote: 'Oh, hi Mark',
     correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/zLhoDB-ORLQ?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: 'https://youtu.be/pjc4ZPTX1XQ?t=16',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/pjc4ZPTX1XQ?controls=0&amp;start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: true,
@@ -250,7 +250,7 @@ const questionCounter = [];
 /*----- cached element references -----*/
 document.getElementById('score').innerHTML = 'Score: ' + scoreKeeper;
 
-//a new button will fade in that will allow the person to render the next question
+
 
 /*----- functions -----*/
 
@@ -335,6 +335,10 @@ function playVideo() {
 
 playVideo();
 
-function nextButton() {
-
-}
+// function nextButton() {
+//    
+//     document.getElementById('nextButton').addEventListener('click', function() {
+//         playQuestion();
+//     }
+//
+// }

@@ -62,9 +62,7 @@ nav {
 
 #embeddedmovie {
     grid-area: embeddedMovie;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-column-start: 2;
 }
 
 .answer-buttons {
