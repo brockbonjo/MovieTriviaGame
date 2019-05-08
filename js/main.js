@@ -25,8 +25,8 @@ const aceVentura = {
 
 const starWars = {
     quote: 'Never tell me the odds',
-    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gRvu0yHoHy8?controls=0&amp;start=60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N1uTsqJVAeo?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ea2HS8NL4s4?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Pw2sex1mJNI?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: true,
@@ -74,7 +74,7 @@ const lordOfTheRings = {
 const sandLot = {
     quote: 'You never heard of the Sultan of Swat? The Titan of Terror? The Collosus of Clout?',
     correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/VdLkYcnml4s?controls=0&amp;start=34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hxJPJ6JY0Pk?controls=0&amp;start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/xs73-eVBu6I?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -95,14 +95,14 @@ const sandLot = {
     ]
 }
 
-const backToTheFuture = {
-    quote: '1.21 gigawatts? Great scott!',
-    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/I5cYgRnfFDA?controls=0&amp;start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/BWUP5QxdwPg?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+const airplane = {
+    quote: "Don't call me Shirley",
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/KM2K7sV-K74?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/AmA7Nm4qvGE?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
-        movie: 'Flubber'
+        movie: 'Monty Python and the Holy Grail'
         },
         {
         isCorrect: false,
@@ -110,11 +110,11 @@ const backToTheFuture = {
         },
         {
         isCorrect: true,
-        movie: 'Back to the Future'
+        movie: 'Airplane'
         },
         {
         isCorrect: false,
-        movie: 'A Beautiful Mind'
+        movie: 'Pink Panther'
         }
     ]
 }
@@ -143,26 +143,26 @@ const homeAlone = {
     ]
 }
 
-const christmasStory = {
-    quote: "I can't put my arms down!",
-    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/PKxsOlzuH0k?controls=0&amp;start=39" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/vvB6Ld1g8vA?controls=0&amp;start=26" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+const stepBrothers = {
+    quote: "I was watching Cops",
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/d8T2MTv5ri0?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lFGv8m1kxIY?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
-        movie: 'Space Jam'
+        movie: 'Super Troopers'
         },
         {
         isCorrect: false,
-        movie: 'Rookie of the Year'
+        movie: 'Chips'
         },
         {
         isCorrect: false,
-        movie: "Harry Potter and the Scorcerer's Stone"
+        movie: 'Anchorman'
         },
         {
         isCorrect: true,
-        movie: 'A Christmas Story'
+        movie: 'Step Brothers'
         }
     ]
 }
@@ -240,7 +240,7 @@ const theRoom = {
 }
 
 /*----- app's state (variables) -----*/
-const questions = [theRoom, willyWonka, myCousinVinny, christmasStory, homeAlone, backToTheFuture, sandLot, lordOfTheRings, aceVentura];
+const questions = [theRoom, willyWonka, myCousinVinny, stepBrothers, homeAlone, airplane, sandLot, lordOfTheRings, starWars, aceVentura];
 
 let scoreKeeper = 0;
 
@@ -298,47 +298,64 @@ function playVideo() {
     document.getElementById('answerOne').addEventListener('click', function() {
         hideButtons();
         questionCounter[questionCounter.length-1].options[0].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
+        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
+        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
     });
 
     document.getElementById('answerTwo').addEventListener('click', function() {
         hideButtons();
         questionCounter[questionCounter.length-1].options[1].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
+        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
+        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
     });
 
     document.getElementById('answerThree').addEventListener('click', function() {
         hideButtons();
         questionCounter[questionCounter.length-1].options[2].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
+        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
+        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
     });
 
     document.getElementById('answerFour').addEventListener('click', function() {
         hideButtons();
         questionCounter[questionCounter.length-1].options[3].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].correctVideoUrl,
+        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
         document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[0].incorrectVideoUrl,
+        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
         document.getElementById('movieQuote').innerHTML = "WRONG!");
-    });
-
+    });  
+    
 }
 
 playVideo();
 
-// function nextButton() {
-//    
-//     document.getElementById('nextButton').addEventListener('click', function() {
-//         playQuestion();
-//     }
-//
+
+
+function nextButton() {
+    // document.getElementById('movieQuote').value === "CORRECT!"
+    // ? scoreKeeper = scoreKeeper + 1
+    // : scoreKeeper;
+   
+    document.getElementById('nextButton').addEventListener('click', function() {
+        document.getElementById('embeddedMovie').innerHTML = '';
+        playQuestion();
+    });
+
+}
+
+nextButton();
+
+
+
+
+// function gameOver() {
+//     questionCounter.length === 10
+//     ? 
+//     :
 // }

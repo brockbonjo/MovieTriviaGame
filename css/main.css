@@ -60,7 +60,7 @@ nav {
     align-items: center;
 }
 
-#embeddedmovie {
+#embeddedMovie {
     grid-area: embeddedMovie;
     grid-column-start: 2;
 }
