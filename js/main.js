@@ -338,24 +338,26 @@ playVideo();
 
 
 function nextButton() {
-    // document.getElementById('movieQuote').value === "CORRECT!"
-    // ? scoreKeeper = scoreKeeper + 1
-    // : scoreKeeper;
-   
     document.getElementById('nextButton').addEventListener('click', function() {
         document.getElementById('embeddedMovie').innerHTML = '';
         playQuestion();
     });
-
 }
 
 nextButton();
 
 
+//function keepScore() {
+// let scoreKeeper = 0;
+// document.getElementById('movieQuote').value === "CORRECT!"
+// ? scoreKeeper = scoreKeeper + 1
+// : scoreKeeper;
+//}
 
 
 // function gameOver() {
-//     questionCounter.length === 10
-//     ? 
-//     :
+//     if (questions.length === 0) {
+//         document.getElementById('movieQuote').innerHTML = 'You got ' + scoreKeeper + 'right out of 10!' &&
+//         document.getElementById('nextButton').style.visibility =  'hidden';
+//     }
 // }
