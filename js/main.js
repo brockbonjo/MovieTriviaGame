@@ -73,7 +73,7 @@ const lordOfTheRings = {
 
 const sandLot = {
     quote: 'You never heard of the Sultan of Swat? The Titan of Terror? The Collosus of Clout?',
-    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/VdLkYcnml4s?controls=0&amp;start=34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/VdLkYcnml4s?controls=0&amp;start=34&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/xs73-eVBu6I?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
@@ -193,8 +193,8 @@ const myCousinVinny = {
 
 const willyWonka = {
     quote: 'We are the music makers and we are the dreamers of the dreams',
-    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3pwvB4_Te8A?controls=0&amp;start=19" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HaoySOGlZ_U?controls=0&amp;start=58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3pwvB4_Te8A?controls=0&amp;start=19&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HaoySOGlZ_U?controls=0&amp;start=58&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: false,
@@ -218,7 +218,7 @@ const willyWonka = {
 const theRoom = {
     quote: 'Oh, hi Mark',
     correctVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/zLhoDB-ORLQ?controls=0;&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/pjc4ZPTX1XQ?controls=0&amp;start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    incorrectVideoUrl: '<iframe width="560" height="315" src="https://www.youtube.com/embed/pjc4ZPTX1XQ?controls=0&amp;start=16&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     options: [
         {
         isCorrect: true,
@@ -274,6 +274,8 @@ function renderButton(buttonNum, movieName) {
     movieName;
 };
 
+
+startGame();
 playQuestion();
 
 function hideButtons() {
@@ -299,6 +301,11 @@ function incrementScore() {
     document.getElementById('score').innerHTML = 'Score: ' + scoreKeeper;
 }
 
+
+
+function startGame() {
+    swal('Welcome to the Movie Trivia Game!', 'In this game, you will be prompted with a movie quote. There are four buttons at the bottom of the screen that contain possible options to where the movie quote belongs.\n \n If you get it "Correct!", the clip containing the movie quote from the chosen movie will play.\n \n If you get it "Wrong!", a clip from the correct movie will shame you for your incorrect decision.')
+};
 
 /*----- event listeners -----*/
 
@@ -371,6 +378,3 @@ function nextButton() {
 }
 
 nextButton();
-
-
-//landing page with game rules?
