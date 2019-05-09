@@ -242,6 +242,8 @@ const theRoom = {
 /*----- app's state (variables) -----*/
 const questions = [theRoom, willyWonka, myCousinVinny, stepBrothers, homeAlone, airplane, sandLot, lordOfTheRings, starWars, aceVentura];
 
+// const questions = [theRoom];
+
 let scoreKeeper = 0;
 
 const questionCounter = [];
