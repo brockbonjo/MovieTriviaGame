@@ -246,8 +246,6 @@ let scoreKeeper = 0;
 
 const questionCounter = [];
 
-
-/*----- cached element references -----*/
 document.getElementById('score').innerHTML = 'Score: ' + scoreKeeper;
 
 
@@ -260,6 +258,7 @@ function playQuestion() {
     questionCounter.push(selectedQuestion);
     document.getElementById('movieQuote').innerHTML = selectedQuestion.quote;
     document.getElementById('question-counter').innerHTML = 'Question ' + questionCounter.length + ' of 10';
+    
     
     renderButton('One', selectedQuestion.options[0].movie)
     renderButton('Two', selectedQuestion.options[1].movie)
@@ -291,46 +290,65 @@ function showButtons() {
     document.getElementById('nextButton').style.visibility = 'hidden';
 }
 
+
+function incrementScore() {
+    scoreKeeper += 1;
+    console.log(scoreKeeper);
+    document.getElementById('score').innerHTML = 'Score: ' + scoreKeeper;
+}
+
+
 /*----- event listeners -----*/
 
 function playVideo() {
 
     document.getElementById('answerOne').addEventListener('click', function() {
         hideButtons();
-        questionCounter[questionCounter.length-1].options[0].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "WRONG!");
+        if (questionCounter[questionCounter.length - 1].options[0].isCorrect === true) {  
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "CORRECT!";
+            incrementScore();
+        } else {
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "WRONG!";
+        }
     });
 
     document.getElementById('answerTwo').addEventListener('click', function() {
         hideButtons();
-        questionCounter[questionCounter.length-1].options[1].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "WRONG!");
+        if (questionCounter[questionCounter.length-1].options[1].isCorrect === true) {  
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "CORRECT!";
+            incrementScore();
+        } else {
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "WRONG!";
+        }
     });
 
     document.getElementById('answerThree').addEventListener('click', function() {
         hideButtons();
-        questionCounter[questionCounter.length-1].options[2].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "WRONG!");
+        if (questionCounter[questionCounter.length-1].options[2].isCorrect === true) {  
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "CORRECT!";
+            incrementScore();
+        } else {
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "WRONG!";
+        }
     });
 
     document.getElementById('answerFour').addEventListener('click', function() {
         hideButtons();
-        questionCounter[questionCounter.length-1].options[3].isCorrect === true  
-        ? (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "CORRECT!")
-        : (document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl,
-        document.getElementById('movieQuote').innerHTML = "WRONG!");
-    });  
-    
+        if (questionCounter[questionCounter.length-1].options[3].isCorrect === true) {  
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].correctVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "CORRECT!";
+            incrementScore();
+        } else {
+            document.getElementById('embeddedMovie').innerHTML = questionCounter[questionCounter.length-1].incorrectVideoUrl;
+            document.getElementById('movieQuote').innerHTML = "WRONG!";
+        }
+    });    
 }
 
 playVideo();
@@ -340,24 +358,17 @@ playVideo();
 function nextButton() {
     document.getElementById('nextButton').addEventListener('click', function() {
         document.getElementById('embeddedMovie').innerHTML = '';
-        playQuestion();
+        if (questions.length === 0) {
+            document.getElementById('movieQuote').innerHTML = 'GAME OVER!';
+            document.getElementById('embeddedMovie').innerHTML = 'You got ' + scoreKeeper + ' right out of 10!'
+            document.getElementById('nextButton').style.visibility =  'hidden';
+        } else {
+            playQuestion();
+        }
     });
 }
 
 nextButton();
 
 
-//function keepScore() {
-// let scoreKeeper = 0;
-// document.getElementById('movieQuote').value === "CORRECT!"
-// ? scoreKeeper = scoreKeeper + 1
-// : scoreKeeper;
-//}
-
-
-// function gameOver() {
-//     if (questions.length === 0) {
-//         document.getElementById('movieQuote').innerHTML = 'You got ' + scoreKeeper + 'right out of 10!' &&
-//         document.getElementById('nextButton').style.visibility =  'hidden';
-//     }
-// }
+//landing page with game rules?
