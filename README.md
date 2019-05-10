@@ -28,3 +28,16 @@ part of the object for that question.
 
 Wireframe:
 https://marvelapp.com/project/3990664/canvas/56371833/
+
+
+
+________________________________________________________________________
+One of my favorite things to do is watch movies. 
+I consistently annoy family and friends with a mixture of famous and obsure movie quotes.
+
+What better way to celebrate this than to quiz others and test their movie quote knowledge?
+That's why I made a Movie Trivia Game. I envisioned a person being able to watch the movie quote after the question is asked.
+
+In the process, I was hoping to take away some better knowledge of javascript functions.
+I feel like my understanding of javascript and the timing of my functions has sky-rocketed this week.
+I'm really happy with how my game turned out and I hope everyone enjoys playing it!
